@@ -4,9 +4,21 @@ body {
 }
 
 #wrapper {
-	margin: 0 auto;
+	margin: 20px auto;
 	padding: 15px;
 	width: 960px;
-	background: #717171;
-	color: #FFF;
+	background: #FFF;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 20px;
+}
+
+button {
+	font-size: 0.8em;
+	background: #FFF;
+	color: #000;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	padding: 0;
 }
