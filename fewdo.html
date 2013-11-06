@@ -1,17 +1,21 @@
 <!DOCTYPE html> <html>
 <head>
-<title>fewDo</title>
+<title>fewDo.</title>
 
-<link rel="stylesheet" type="text/css" href="scss/styles.scss">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700' rel='stylesheet' type='text/css'>
 <script src="jquery-1.10.2.min.js"></script>
+<script src="jquerycode.js"></script>
 
 </head>
 <body>
 	<div id="wrapper">
-		<h1>fewDo</h1>
-		<h2>Don't overdo it.</h2>
+		<h1>fewDo.</h1>
+		<h2>Don't</h2>
+		<h2>over</h2>
+		<h2>do</h2>
+		<h2>it.</h2>
 
-		<div>
 			<ul id="list">
 				<li>
 					Buy milk.<button class="btn-remove">X</button>
@@ -25,39 +29,13 @@
 				<li>
 					Cry myself to sleep.<button class="btn-remove">X</button></li>
 			</ul>
-		</div>
-
 		<form>
-			<input type="text" id="textinput" name="todo_entry" action="#" placeholder="What do you need to do?">
+			<input type="text" id="textinput" name="todo_entry"><br>
 			<input type="submit" id="addbutton" value="Add this.">
 		</form>
-
 	</div>
+
     
-    <script>
-    // jQuery code goes here.
-
-	$(document).ready(function() {
- 
-	    // Your code here.
-
-		$("form").submit( function( event ) {
-			event.preventDefault();
-			alert( "OK, one more thing added.");
-			
-			var input = $("#textinput").val();
-			var btn = $('<button class="btn-remove">X</button>');
-			var li = $("<li>" + input + "</li>");
-
-			li.append(btn)
-			$("ul").append(li)
-
-			$('#list').on('click', 'btn-remove', function() { $(this).closest('newlistitem').fadeOut;
-
-			});
-		});
-	});
-    </script>
 
 </body>
 </html>
